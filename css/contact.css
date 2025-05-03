@@ -1,0 +1,707 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #122541;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.contact-us {
+  background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(3, 3, 3, 0.7)),
+    url("../imges/top-view-travel-elements-collection.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.contact span {
+  font-size: 35px;
+  font-weight: 600;
+  background-color: #1e5cdf;
+  color: #ffffff;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.form-contact-us {
+  margin-inline: auto;
+  margin-block: 5%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  font-weight: 800;
+}
+
+.create-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.create-form span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.form-contact{
+    margin-top: 30px; 
+    padding: 30px;
+}
+.form-contact input{
+    margin-bottom: 15px;
+    width:100%;
+   padding-block: 15px;
+}
+.form-contact label{
+    font-size: 15px;
+    font-weight: 500;
+}
+.form-contact button{
+    background-color: #1e5cdf;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background-color 0.8s ease-in-out;
+    border: none;
+    padding-inline: 8px;
+    padding-block:8px ;
+    border-radius: 5px;
+}
+
+.form-contact button:hover{
+    background-color: #ffffff;
+    color: #122541;
+}
+.form-contact textarea{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1e5cdf;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+input{
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e5cdf;
+}
+label{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* index.html stylekiisi weeye .... style.css */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+body {
+  background-color: #122541;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* margin: 10px; */
+  background-color: #122541;
+  position: sticky;
+  top: 0;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 55px;
+  padding: 10px;
+  align-items: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links ul li a:hover {
+  color: #1e5cdf;
+}
+.logo {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.log-in {
+  padding-block: 10px;
+  padding-inline: 20px;
+  background-color: #1e5cdf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.log-in:hover {
+  background-color: #ffffff;
+  color: #122541;
+}
+
+.hero {
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(3, 3, 3, 0.6)),
+    url("/html/travel-concept-with-landmarks.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-contant {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  flex-direction: column;
+  margin-inline: 40px;
+  padding: 5px;
+}
+.hero-contant h2 {
+  background-color: #122541;
+  color: #ffffff;
+  border-radius: 7px;
+  padding-inline: 5px;
+  padding-block: 5px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.hero-contant p {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3%;
+  line-height: 3rem;
+}
+
+.booking-Now {
+  padding-inline: 13px;
+  padding-block: 13px;
+  border-radius: 5px;
+  border: none;
+  margin-inline: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #1e5cdf;
+  transition: background-color 0.3s ease-in-out;
+}
+.booking-Now:hover {
+  background-color: #ffffff;
+  color: #122541;
+}
+/* bars */
+.bars {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 33px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bars .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+.Destination {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.contnt-grid {
+  display: flex;
+  padding-block: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.contnt-grid p {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.contant-istambul img {
+  width: 80%;
+  border-radius: 6px;
+}
+
+.contant-dubai img {
+  width: 80%;
+  border-radius: 6px;
+}
+
+.contant-nairobi img {
+  width: 80%;
+  border-radius: 6px;
+}
+
+.top-hotela {
+  padding: 20px;
+}
+.icons {
+  color: rgb(249, 141, 0);
+  font-size: 14px;
+}
+.contnt-grid .price {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.contnt-grid .Hotel-Book {
+  padding-block: 10px;
+  padding-inline: 10px;
+  background-color: #1e5cdf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.8s ease-in-out;
+}
+
+.Hotel-Book:hover {
+  background-color: #ffffff;
+  color: #122541;
+}
+
+.fa-shield-check img {
+  width: 20%;
+  padding-bottom: 2%;
+}
+
+.headphones-simple i {
+  font-size: 50px;
+  color: #263852;
+  padding-bottom: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-paper-plane i {
+  font-size: 50px;
+  color: #263852;
+  padding-bottom: 7%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contnt-grid .shield-check {
+  width: 32%;
+}
+.why-choose-Us {
+  padding: 20px;
+}
+
+.Testimonials {
+  margin-block: 5%;
+  padding: 20px;
+}
+.user-testimonial {
+  display: flex;
+  padding-block: 30px;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.user img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.user span {
+  color: #1e5cdf;
+  padding-block: 13px;
+}
+.user p {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.Our-Trusted {
+  padding: 20px;
+}
+.Our-Trusted h1 {
+  font-size: 28px;
+}
+
+.freedom img {
+  width: 110%;
+}
+.Jabuuti-air {
+  width: 60%;
+}
+.daalo-air {
+  width: 60%;
+}
+
+.hEthiopia-air {
+  width: 60%;
+}
+.qatar-air {
+  width: 60%;
+}
+.hotels-com {
+  width: 60%;
+}
+
+.news-later {
+  width: 70%;
+  padding: 30px;
+  background-color: #283a62;
+  margin-inline: auto;
+  border-radius: 5px;
+}
+.contant-sing-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.contant-sing-in-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+.contant-sing-in-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contant-sing-in-2 span {
+  padding-block: 10px;
+}
+.input-and-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Subscribe-Now {
+  padding-inline: 4px;
+  padding-block: 8px;
+  background-color: #122541;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  position: relative;
+  right: 40px;
+}
+input {
+  padding-inline: 60px;
+  padding-block: 6px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+/* footer style */
+
+.footer {
+  width: 100%;
+  /* height: 21rem; */
+  background-color: #1e5cdf;
+  margin-top: 5%;
+  border-radius: 5px;
+}
+
+.brand-web {
+  padding: 10px;
+}
+.brand-web span {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 25px;
+  font-style: italic;
+}
+.brand-web p {
+  color: #858689;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.quik-links span {
+  font-weight: 700;
+  font-size: 20px;
+}
+.quik-links li {
+  list-style: none;
+}
+.quik-links li a {
+  text-decoration: none;
+  color: #858689;
+  font-size: 20px;
+}
+.Contact-Information {
+  margin-top: 8%;
+  padding: 5px;
+}
+.Contact-Information p {
+  font-weight: 500;
+  font-size: 21px;
+  color: #858689;
+}
+.Contact-Information span {
+  font-weight: 700;
+  font-size: 20px;
+}
+.copy-right {
+  border-top: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flow-us {
+  margin-top: 1%;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+.flow-us h3 {
+  font-weight: 500;
+  font-style: italic;
+  color: #858689;
+}
+.flow-us .fa-facebook:hover {
+  color: #ffffff;
+}
+.flow-us .fa-tiktok:hover {
+  color: #ffffff;
+}
+
+.flow-us .fa-instagram:hover {
+  color: #ffffff;
+}
+.flow-us .fa-twitter:hover {
+  color: #ffffff;
+}
+
+.flow-us .fa-linkedin:hover {
+  color: #ffffff;
+}
+
+.social-lnk {
+  display: flex;
+  gap: 10px;
+}
+
+/* end footer */
+
+/* response mobile  */
+
+@media (max-width: 690px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bars {
+    display: flex;
+  }
+
+  .nav-links {
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 48px;
+  }
+  .nav-links li {
+    text-align: center;
+  }
+
+  .log-in {
+    padding-block: 12px;
+    padding-inline: 35px;
+  }
+
+  .hero-contant h2 {
+    font-size: 1.5rem;
+  }
+  .hero-contant p {
+    font-size: 1.5rem;
+  }
+  .booking-Now {
+    margin-top: 7%;
+  }
+  .hero {
+    height: 100vh;
+  }
+
+  .nav.active .bars .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav.active .bars .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .nav.active .bars .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav.active .nav-links {
+    max-height: 335px;
+    opacity: 1;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contnt-grid {
+    flex-direction: column;
+  }
+
+  .contant-istambul img {
+    width: 95%;
+    border-radius: 6px;
+  }
+
+  .contant-dubai img {
+    width: 95%;
+    border-radius: 6px;
+  }
+
+  .contant-nairobi img {
+    width: 95%;
+    border-radius: 6px;
+  }
+
+  .news-later {
+    width: 100%;
+    padding: 10px;
+  }
+  input {
+    padding-inline: 30px;
+    width: 70%;
+  }
+
+  .Subscribe-Now {
+    padding-inline: 4px;
+    padding-block: 8px;
+    position: relative;
+    right: 5px;
+  }
+  .footer {
+    padding: 5px;
+  }
+}

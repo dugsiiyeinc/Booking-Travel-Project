@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashboardUser</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/dashboardUser.css" />
+  </head>
+  <body>
+    <!--nav Dashboard -->
+
+    <nav class="nav-dash">
+      <h1>Travel Booking</h1>
+      <!-- bar -->
+      <div class="bars">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="dash-menu">
+        <div class="dash-user">
+          <span class="dash"> Dashboard</span>
+          <p class="system">User</p>
+        </div>
+        <div class="User">
+          <i class="fa-solid fa-user"></i><span class="dashboard-User">Abdirahman Dalamar</span></div
+        >
+        <button type="button" class="LogOut">LogOut</button>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!-- sidebar Dashboard //desktop-side-bar-->
+
+      <aside class="aside-dashboard">
+        <div class="image-dash">
+          <h1>Dashboard</h1>
+          <img src="../imges/remove-dash.png" alt="imge-dash" />
+        </div>
+
+        <div class="flight-booking">
+          <i class="fa-solid fa-plane"></i>
+          <span>Flight Booking</span>
+        </div>
+
+        <div class="Hotel-booking">
+          <i class="fa-solid fa-hotel"></i>
+          <span> Hotel Booking</span>
+        </div>
+
+        <div class="my-Booking">
+          <i class="fa-solid fa-book"></i>
+          <span class="all-datails-Booking"> My Flights</span>
+        </div>
+
+        <div class="my-Hotels">
+          <i class="fa-solid fa-book"></i>
+          <span class="all-datails-Booking"> My Hotels</span>
+        </div>
+      </aside>
+
+      <section class="hero">
+        <div class="content-hero">
+          <span id="wel">Welcome <span id="span">,</span></span>
+          <span class="name-user">Abdirahman Dalmar</span>
+        </div>
+
+        <!-- flight booking desk-top-menu -->
+        <div class="flight-form" style="display: none">
+          <h1>✈️ Flight Booking Form</h1>
+          <div class="form-submit-data-flight">
+            <form class="flight-submit">
+              <label for="">Name :</label>
+              <input
+                type="text"
+                class="full-name"
+                placeholder="Enter Your  Name"
+              />
+              <label for="">Email Address:</label>
+              <input
+                type="email"
+                class="email"
+                placeholder="Enter Your Email Address"
+                required
+              /><br />
+              <label for="">Phone Number:</label>
+              <input
+                type="text"
+                class="phone-Number"
+                placeholder="Enter Your Phone Number"
+              /><br />
+              <label for="">From (Departure City):</label>
+              <input
+                type="text"
+                class="form-Departure-City"
+                placeholder="Enter Your From (Departure City)"
+              /><br />
+              <label for="">To (Destination City):</label>
+              <input
+                type="text"
+                class="to"
+                placeholder="Enter Your To (Destination City)"
+              /><br />
+              <label for="">Departure Date:</label>
+              <input
+                type="date"
+                class="Departure-date"
+                placeholder="Enter Your Departure Date"
+              /><br />
+              <label for="">Return Date:</label>
+              <input
+                type="date"
+                class="Return-date"
+                placeholder="Enter Your Return Date"
+              />
+              <br />
+              <label for="">Flight Class:</label>
+              <select name="" id="flight-class">
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+                <option value="First Class">First Class</option></select
+              ><br />
+              <button type="submit" class="btn-flight">Submit Book</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Hoteel booking desk-top-menu -->
+    <div class="Hotel-form" style="display: none">
+      <div class="form-submit-data-hotel">
+        <h1>📋 Hotel Booking</h1>
+        <form class="flight-submits">
+          <label for="">Name :</label>
+          <input
+            type="text"
+            class="full-names"
+            placeholder="Enter Your  Name"
+          /><br />
+          <label for="">Email Address:</label>
+          <input
+            type="email"
+            class="emails"
+            placeholder="Enter Your Email Address"
+            required
+          /><br />
+          <label for="">Phone Number:</label>
+          <input
+            type="text"
+            class="phone-Numbers"
+            placeholder="Enter Your Phone Number"
+          /><br />
+          <label for="">Hotel Name:</label>
+          <input
+            type="text"
+            class="Hotel-Name"
+            placeholder="Enter Your Hotel Name "
+          /><br />
+          <label for="">Destination City:</label>
+          <input
+            type="text"
+            class="Destinations-user"
+            placeholder="Enter Your Destination City"
+          /><br />
+          <label for="">Check-in Date:</label>
+          <input type="date" class="Check-in-Date" /><br />
+          <label for="">Check-out Date:</label>
+          <input type="date" class="Check-out-Date" /> <br />
+          <label for="">Room Type :</label>
+          <select name="" id="Hotel-Rooms">
+            <option value="Single">Single Room</option>
+            <option value="Double">Double Room</option>
+            <option value="Twin Room">Twin Room</option>
+            <option value="Suite Room">Suite Room</option>
+            <option value="Family Room">Family Room</option></select
+          ><br />
+          <label for="">Number of Guests:</label>
+          <input
+            type="text"
+            class="Number-of-Guests"
+            placeholder="Enter Your Number of Guests"
+          /><br />
+          <button type="submit" class="btn-flight">Submit Book</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- table heading flights -->
+    <div class="flight-book-heading" style="display: none">
+      <h1>✈️ Flight Booking</h1>
+    </div>
+
+    <table class="thead" style="display: none">
+      <thead>
+        <tr>
+          <th class="Name">Name</th>
+          <th class="email">Email Address</th>
+          <th class="phoness">Phone Number</th>
+          <th class="froms">From</th>
+          <th class="to dis">To</th>
+          <th class="depar">Departure Date</th>
+          <th class="return">Return Date</th>
+          <th class="class">flight Class</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+    </table>
+
+    <table class="flight-booking-Table">
+      <!-- dynamic table tbody flights -->
+    </table>
+
+
+
+    <!-- flight booking desk-top-menu -->
+
+    <div class="flight-forms" style="display: none">
+      <h1 class="head">x</h1>
+      <h1>✈️ Flight Booking Form</h1>
+      <div class="form-submit-data-flight">
+        <form class="flight-submit">
+          <label for="">Name :</label>
+          <input type="text" class="Name" placeholder="Enter Your  Name" />
+          <label for="">Email Address:</label>
+          <input
+            type="email"
+            class="email"
+            placeholder="Enter Your Email Address"
+            required
+          /><br />
+          <label for="">Phone Number:</label>
+          <input
+            type="text"
+            class="phone-Number"
+            placeholder="Enter Your Phone Number"
+          /><br />
+          <label for="">From (Departure City):</label>
+          <input
+            type="text"
+            class="form-Departure-City"
+            placeholder="Enter Your From (Departure City)"
+          /><br />
+          <label for="">To (Destination City):</label>
+          <input
+            type="text"
+            class="to"
+            placeholder="Enter Your To (Destination City)"
+          /><br />
+          <label for="">Departure Date:</label>
+          <input
+            type="date"
+            class="Departure-date"
+            placeholder="Enter Your Departure Date"
+          /><br />
+          <label for="">Return Date:</label>
+          <input
+            type="date"
+            class="Return-date"
+            placeholder="Enter Your Return Date"
+          />
+          <br />
+          <label for="">Flight Class:</label>
+          <select name="" id="flight-class">
+            <option value="Economy">Economy</option>
+            <option value="Business">Business</option>
+            <option value="First Class">First Class</option></select
+          ><br />
+          <button type="submit" class="btn-Update">Update Book</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- hotel heading  -->
+    <div class="Hotels-books-heading" style="display: none">
+      <h1>📋 Hotel Booking</h1>
+    </div>
+
+    <table class="theads-Hotel" style="display: none">
+      <thead>
+        <tr>
+          <th class="Name">Name</th>
+          <th class="email">Email Address</th>
+          <th class="phoness">Phone Number</th>
+          <th class="froms">Hotel Name</th>
+          <th class="to dis">Destination City</th>
+          <th class="depar">Check-in Date</th>
+          <th class="depar">Check-out Date</th>
+          <th class="return">Room Type</th>
+          <th class="class">Number of Guests</th>
+          <th>`</th>
+        </tr>
+      </thead>
+    </table>
+
+    <table class="hotel-booking-Table" style="display: none;">
+      <!-- dynamic table tbody hotels -->
+    </table>
+
+
+  </body>
+  <script src="../js/dashbordUser.js"></script>
+  <script src="../js/login.js"></script>
+
+</html>
