@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/dashboardadmin.css">
+</head>
+<body>
+    <!--nav Dashboard -->
+
+    <nav class="nav-dash ">
+   <h1>Travel Booking</h1>
+   <!-- bar -->
+   <div class="bars">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+  <div class="dash-menu">
+   <div class="dash-user">
+    <span> Dashboard</span>
+    <p class="system">Admin</p>
+   </div>
+    <span class="User"> <i class="fa-solid fa-user"></i> Abdirahman Dalmar</span>
+    <button type="button" class="LogOut">LogOut</button>
+</div>
+
+</nav>
+<main class="main">
+
+
+
+<!-- sidebar Dashboard -->
+
+<aside class="aside-dashboard">
+    <div class="image-dash">
+    <h1>Dashboard</h1>
+    <img src="../imges/remove-dash.png" alt="imge-dash">
+    </div>
+
+    <div class="flight-booking">  
+        <i class="fa-solid fa-book"></i>
+        <span class="All-Booking">Flight Booking</span>
+    </div>
+
+    <div class="Hotel-booking">
+        <i class="fa-solid fa-book"></i>
+        <span class="All-Booking">Hotel Booking</span>
+    </div>
+
+    <div class="all-Users-booking">
+        <span class="all-users"><i class="fa-solid fa-hotel"></i>All Users</span>    
+    </div>
+
+    <div class="Contact-Booking">
+        <span class="Contact-Info"><i class="fa-solid fa-address-book"></i>  Contact Info</span>
+    </div>
+   </aside>
+
+
+<section class="hero">
+    <div class="content-hero">
+     <span class="name-user"> Manager Abdirahman Dalmar</span>
+    </div>
+
+    <!-- totals booking -->
+</section>
+<section class="total-flight">
+    <div class="flight-count">
+        <p>   <i class="fa-solid fa-book"></i>Total Flight Booking</p>
+        <span class="flight-total-count">300</span>
+    </div>
+</section>
+
+<section class="total-Hotels">
+    <div class="hotel-count">
+        <p>  <i class="fa-solid fa-hotel"></i> Total Hotel Booking</p>
+        <span class="Hotel-total-count">20</span>
+    </div>
+</section>
+
+<section class="total-contact">
+    <div class="contact-count">
+        <p>  <i class="fa-solid fa-address-book"></i> Total Contact Info</p>
+        <span class="contact-total-count">100</span>
+    </div>
+</section>
+</main>
+
+
+ <!-- table heading flights -->
+ <div class="flight-book-heading" style="display: none">
+    <h1>✈️ Flight Booking</h1>
+  </div>
+
+  <table class="thead" style="display: none">
+    <thead>
+      <tr>
+        <th class="Name">Name</th>
+        <th class="email">Email Address</th>
+        <th class="phoness">Phone Number</th>
+        <th class="froms">From</th>
+        <th class="to dis">To</th>
+        <th class="depar">Departure Date</th>
+        <th class="return">Return Date</th>
+        <th class="class">flight Class</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+  </table>
+
+  <table class="flight-booking-Table">
+    <!-- dynamic table tbody flights -->
+  </table>
+
+
+
+
+
+    <!-- hotel heading  -->
+    <div class="Hotels-books-heading" style="display: none">
+        <h1>📋 Hotel Booking</h1>
+      </div>
+  
+      <table class="theads-Hotel" style="display: none">
+        <thead>
+          <tr>
+            <th class="Name">Name</th>
+            <th class="email">Email Address</th>
+            <th class="phoness">Phone Number</th>
+            <th class="froms">Hotel Name</th>
+            <th class="to dis">Destination City</th>
+            <th class="depar">Check-in Date</th>
+            <th class="depar">Check-out Date</th>
+            <th class="return">Room Type</th>
+            <th class="class">Number of Guests</th>
+            <th>`</th>
+          </tr>
+        </thead>
+      </table>
+  
+      <table class="hotel-booking-Table" style="display: none;">
+        <!-- dynamic table tbody hotels -->
+      </table>
+  
+
+
+<!-- all users -->
+
+
+    <div class="all-Users-books-heading" style="display: none">
+        <h1>📋 All Users </h1>
+      </div>
+  
+      <table class="theads-All-Users" style="display: none">
+        <thead>
+          <tr>
+            <th class="Name">Name</th>
+            <th class="email">Email Address</th>
+            <th class="	Role">Role</th>
+            <th class="froms">Actions</th>
+          </tr>
+        </thead>
+      </table>
+  
+      <table class="all-Users-booking-Table" style="display: none;">
+        <!-- dynamic table tbody all Users -->
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- all contact -->
+
+
+    <div class="all-contact-books-heading" style="display: none">
+      <h1>📋 All Contact Us </h1>
+    </div>
+
+    <table class="theads-All-Contact" style="display: none">
+      <thead>
+        <tr>
+          <th class="Name">First Name</th>
+          <th class="email">Last Name</th>
+          <th class="	Role">Email Address</th>
+          <th class="froms">Phone Number</th>
+        </tr>
+      </thead>
+    </table>
+
+    <table class="all-Contact-booking-Table" style="display: none;">
+      <!-- dynamic table tbody all Users -->
+    </table>
+</body>
+<script src="../js/dashbordUser.js"></script>
+<script src="../js/dashboardAdmin.js"></script>
+<script src="../js/contact.js"></script>
+</html>

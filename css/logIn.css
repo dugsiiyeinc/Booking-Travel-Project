@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #122541;
+    font-family: "Poppins", sans-serif;
+    color: #0f2547;
+  }
+
+  .layout-desing{
+    width: 100%;
+    background-color: rgb(204, 202, 202);
+    margin-inline: auto;
+    margin-top: 10%;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .container-register-user{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .container-register-user h1{
+   font-weight: 600;
+   font-size: 30px;
+   margin-inline: auto;
+  }
+  .container-register-user input{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: 70%;
+    padding-block: 8px;
+    outline: none;
+    border-radius: 2px;
+    border: 1.2px solid #1057c1;
+    padding-inline: 4px;
+    margin-inline: auto;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1057c1;
+  }
+
+  .container-register-user button{
+    padding-inline: 60px;
+    background-color: #2071ec;
+    color: #ffff;
+     padding-block: 10px;
+     border: none;
+     margin-inline: 35%;
+     margin-top: 5%;
+     font-weight: 500;
+     font-size: 18px;
+     border-radius: 5px;
+     transition: background-color 0.8s ease-in-out;
+
+  }
+  .container-register-user button:hover{
+    background-color:#0f2547;
+    color: #ffff;
+  }
+
+  .singUp-Register{
+    margin-top: 7%;
+    display: flex;
+     justify-content: center;
+     gap: 4px;
+    
+  }
+  .singUp-Register a{
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .container-register-user select{
+    margin-inline: 15%;
+    margin-top: 3%;
+    color: #1057c1;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border: 1px solid #1057c1;
+    font-size: 14px;
+    outline: none;
+    font-weight: 500;
+  }
+  
+  .container-register-user select option{
+    border: none;
+    background-color:#ffff;
+    outline: none;
+  }
+

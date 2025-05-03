@@ -1,0 +1,942 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+body {
+  background-color: rgb(231, 234, 237);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.main {
+  display: flex;
+  flex: 1;
+  height: 90vh;
+  width: 100%;
+}
+.nav-dash {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  background-color: #122541;
+}
+.dash-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.hero {
+  flex: 1;
+  background-color: rgb(231, 234, 237);
+  color: #122541;
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  position: relative;
+  background-image: url("../imges/rm378-04.jpg");
+  height: 108vh;
+  width: 100%;
+}
+
+.content-hero {
+  display: flex;
+  justify-content: center;
+  color: #0a0303;
+  margin-top: 0.3%;
+  align-items: center;
+  background-color: #122541;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+}
+#wel {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.name-user {
+  font-size: 30px;
+  color: #ffff;
+}
+
+.aside-dashboard {
+  display: flex;
+  color: #122541;
+  flex-direction: column;
+  padding: 10px;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1e5cdf;
+  color: #ffff;
+  border-radius: 1px;
+  width: 15%;
+  height: 120%;
+}
+
+.flight-booking {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.flight-booking:hover{
+background-color: #122541;
+padding-inline:30px ;
+padding-block: 5px;
+border-radius: 2px;
+border-left:5px solid #fff  ;
+}
+
+.Hotel-booking {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Hotel-booking:hover{
+
+  background-color: #122541;
+  padding-inline:30px ;
+  padding-block: 5px;
+  border-radius: 2px;
+  border-left:5px solid #fff  ;
+}
+
+.my-Booking {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.my-Booking:hover{
+  background-color: #122541;
+  padding-inline:30px ;
+  padding-block: 5px;
+  border-radius: 2px;
+  border-left:5px solid #fff  ;
+  font-size: 20px;
+}
+
+.image-dash img {
+  width: 20%;
+}
+.image-dash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.dash-user span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.dash-user p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+.User {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.LogOut {
+  padding-inline: 20px;
+  padding-block: 7px;
+  background-color: #1e5cdf;
+  color: #ffff;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.8s ease-in-out;
+}
+.LogOut:hover {
+  background-color: #ffff;
+  color: #122541;
+}
+
+.bars {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 33px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bars .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+.moblie-dash {
+  display: none;
+}
+.flight-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 600;
+  width: 80%;
+}
+.Hotel-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 18rem;
+  left: 23rem;
+  flex-direction: column;
+  color: #122541;
+  width: 70%;
+  color: #fff;
+  font-weight: 600;
+}
+
+.Hotel-form select{
+  color: #1e5cdf;
+  border-radius: 2px;
+  padding-inline: 5px;
+  padding-block: 3px;
+}
+
+.Hotel-form h1 {
+  background-color: #122541;
+  color: #ffff;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  margin-top: -15%;
+  font-size: 20px;
+}
+.flight-form h1 {
+  background-color: #122541;
+  color: #ffff;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  margin-top: -7%;
+}
+
+.form-submit-data-flight {
+  margin-top: -2%;
+  padding-inline: 20px;
+  padding-block: 20px;
+}
+.form-submit-data-hotel {
+  margin-top: 0.4%;
+  padding-inline: 20px;
+  padding-block: 20px;
+}
+
+.form-submit-data-flight select {
+  padding: 5px;
+  color: #1e5cdf;
+  outline: none;
+  border: 1.4px solid #1e5cdf;
+}
+input {
+  width: 100%;
+  padding-inline: 10px;
+  padding-block: 5px;
+  outline: none;
+  border: 1px solid #1e5cdf;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #1e5cdf;
+  font-weight: 600;
+}
+label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-flight {
+  padding-inline: 10px;
+  background-color: #1e5cdf;
+  padding-block: 6px;
+  border: none;
+  color: #ffff;
+  border-radius: 2px;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.5s ease-in-out;
+}
+.btn-flight:hover {
+  background-color: #ffff;
+  color: #122541;
+  border: 1px solid #122541;
+}
+
+.flight-mobile-book {
+  display: none;
+}
+.hotel-form-mobile{
+  display: none;
+}
+
+.data-user{
+  position: absolute;
+  top: 15rem;
+  right: 18rem;
+  left: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ gap: 20px;
+
+}
+.Full-Name{
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+gap: 10px;
+flex-direction: column;
+}
+.Full-Name h3{
+  font-size: 16px;
+  color: #122541;
+  font-weight: 700;
+  color: #1e5cdf;
+}
+.Email-Address{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.Email-Address h3{
+  font-size: 16px;
+  color: #122541;
+  font-weight: 700;
+  color: #1e5cdf;
+}
+.Phone-Number{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Phone-Number h3{
+  font-size: 16px;
+  color: #122541;
+  font-weight: 700;
+  color: #1e5cdf;
+}
+
+.From-Departure-City h3{
+  font-size: 16px;
+  color: #122541;
+  font-weight: 700;
+  color: #1e5cdf;
+
+}
+.From-Departure-City{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.To-Destination-City h3{
+  font-size: 16px;
+  color: #122541;
+  font-weight: 700;
+  color: #1e5cdf;
+}
+.To-Destination-City{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.Departure-Date h3{
+  font-size: 16px;
+  color: #1e5cdf;
+  font-weight: 700;
+  gap: 10px;
+  color: #1e5cdf;
+}
+.Departure-Date{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Return-Date h3{
+  font-size: 16px;
+  color: #122541;
+  font-weight: 700;
+  color: #1e5cdf;
+}
+.Return-Date{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Flight-Class h3{
+  font-size: 16px;
+  color: #122541;
+  font-weight: 700;
+  color: #1e5cdf;
+}
+.Flight-Class{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+
+
+.daleteBtn{
+  background-color:red;
+  padding-inline: 10px;
+  padding-block: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Edit{
+  background-color:green;
+  padding-inline: 20px;
+  padding-block: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  
+  
+}
+
+.flight-booking-Table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.thead thead  tr{
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding: 5px;
+  background-color: #122541;
+  position: relative;
+  top: -25rem;
+  left: 0;
+  right:0;
+   bottom: 0;
+   padding: 5px;
+
+}
+.flight-booking-Table{
+  background-color: #1e5cdf;
+  margin-top: -1%;
+  position: relative;
+  top: -24rem;
+  left: 0;
+  right:0;
+  text-align: center;
+  overflow: hidden;
+}
+.flight-table{
+  padding-inline: 10px;
+  padding-block: 8px;
+  margin: 7px;
+
+
+}
+.flight-table .full-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flight-table .email-address{
+ padding-inline: 20px;
+  
+}
+.flight-table .phone-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10px;
+  padding-block: 15px;
+}
+.flight-table .from{
+  padding-inline: 10px;
+  padding-block: 15px;
+
+}
+.flight-table .destination{
+  padding-inline: 10px;
+  padding-block: 15px;
+
+}
+.flight-table .daleteBtn{
+  margin-block: 10px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 20px;
+}
+.flight-table .departure-Date{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 10px;
+}
+.flight-table .flight-classes{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 8px;
+}
+.flight-table .returnDate{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 8px;
+}
+.flight-table .Edit{
+  margin-block: 10px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 18px;
+}
+
+.thead .Name{
+  margin-right:20px;
+  width: 30px;
+  font-size: 18px;
+}
+.thead .email{
+  margin-right: 30px;
+  width: 45%;
+
+}
+
+.thead .phoness{
+  margin-right: 30px;
+  width: 40%;
+}
+.thead .froms{
+  margin-right: 30px;
+  width: 40%;
+}
+
+.flight-book-heading{
+  background-color: #122541;
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  top: -27rem;
+  left: 0;
+  right:0;
+  border-radius: 6px;
+}
+
+.flight-forms{
+  position: relative;
+  top: -38rem;
+  left: 27rem;
+  right:0;
+  border-radius: 6px;
+  background-color: #122541;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+.flight-forms input{
+  width: 100%;
+}
+.btn-Update{
+  background-color:green;
+  padding-inline: 20px;
+  padding-block: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2%;
+}
+.flight-forms .head{
+  position:absolute;
+  top: 0;
+  right: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.my-Hotels{
+  cursor: pointer;
+}
+
+.hotel-booking-Table{
+  background-color: #1e5cdf;
+  margin-top: -1%;
+  position: relative;
+  top: -24rem;
+  left: 2px;
+  right:0;
+  text-align: center;
+  overflow: hidden;
+  padding-inline: 20px;
+  width: 100%;
+}
+
+
+.hotel-table .Names{
+  padding-inline: 10px;
+  padding-block: 8px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: -28px;
+
+
+}
+.hotel-table .addresss{
+  padding-inline: 10px;
+  padding-block: 8px;
+  margin: 3px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: -30px;
+}
+.hotel-table .phone{
+  padding-inline: 10px;
+  padding-block: 8px;
+  margin-inline: 20px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: -30px;
+}
+.hotel-table .fromss{
+  padding-inline: 10px;
+  padding-block: 8px;
+  margin: 10px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: -10px;
+}
+.hotel-table .destination{
+  padding-inline: 10px;
+  padding-block: 8px;
+  margin: 5px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 20px;
+}
+.hotel-table .departure-Datess{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 80px;
+}
+.hotel-table .returnDates{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 128px;
+  text-align: center;
+}
+.hotel-table .flight-classess{
+
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 170px;
+  text-align: center;
+}
+.hotel-table .number-of-Guest{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 250px;
+  text-align: center;
+}
+.hotel-table .daleteBtn{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 320px;
+  overflow: hidden;
+  padding-inline: 5px;
+}
+.hotel-table .Edit{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 320px;
+  overflow: hidden;
+  padding-inline: 9px;
+
+}
+.Hotels-books-heading{
+  background-color: #122541;
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  top: -28rem;
+  left: 0;
+  right:0;
+  border-radius: 6px;
+}
+
+
+.my-Hotels{
+  font-size: 18px;
+}
+.my-Hotels:hover{
+  background-color: #122541;
+  padding-inline:31px;
+  border-left: 3px solid #fff;
+  padding-block: 10px;
+  border-radius: 5px;
+  font-size: 21px;
+}
+
+.theads-Hotel thead  tr{
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding: 5px;
+  background-color: #122541;
+  position: relative;
+  top: -25rem;
+  left: 0;
+  right:0;
+   bottom: 0;
+   padding: 5px;
+
+}
+
+/* tablet  and mobile Responsive Desing */
+
+/* tablet */
+@media (max-width: 890px) {
+  .bars {
+    display: flex;
+  }
+  .nav-dash {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dash-menu {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .nav-dash.active .bars .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-dash.active .bars .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .nav-dash.active .bars .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-dash.active .dash-menu {
+    max-height: 330px;
+    opacity: 1;
+  }
+  .aside-dashboard {
+    overflow: hidden;
+    padding: 13px;
+    width: 28%;
+  }
+  .content-hero {
+    padding: 20px;
+  }
+  #wel {
+    font-size: 20px;
+  }
+
+  .name-user {
+    font-size: 20px;
+  }
+  .moblie-dash {
+    display: none;
+  }
+  .flight-mobile-book {
+    display: none;
+  }
+
+  .Hotel-form {
+    top: 25rem;
+    left: 15rem;
+    font-size: 15px;
+  }
+
+  .Hotel-form h1 {
+    padding-inline: 3rem;
+    padding-block: 1rem;
+  }
+  .hotel-form-mobile{
+    display: none;
+  }
+}
+
+/* mobile Responsive Desing */
+
+@media (max-width: 620px) {
+  .aside-dashboard {
+    display: none;
+  }
+
+  .content-hero {
+    padding: 18px;
+  }
+  #wel {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .name-user {
+    font-size: 18px;
+  }
+
+  .moblie-dash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    font-size: 30px;
+  }
+
+  #span {
+    display: none;
+  }
+
+  .flight-booking {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+
+  .Hotel-booking {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+
+  .my-Booking {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  .dash-menu {
+    margin-top: 5%;
+  }
+  .flight-booking-mobile {
+    font-size: 15px;
+  }
+  .flight-mobile-book {
+    display: flex;
+    position: absolute;
+    top: 420px;
+    right: 0;
+    left: 0;
+    background-color: #122541;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .Hotel-booking-mobile{
+    font-size: 14px;
+  }
+
+  .hotel-form-mobile{
+    display: flex;
+  }
+
+  .hotel-form-mobile{
+    display: flex;
+    position: absolute;
+    top: 420px;
+    right: 0;
+    left: 0;
+    background-color: #122541;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
