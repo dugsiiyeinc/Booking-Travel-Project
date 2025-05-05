@@ -9,15 +9,15 @@ bars.addEventListener("click",()=>{
 })
 
 login.addEventListener("click",()=>{
-    window.location.href="./html/login.html"
+    window.location.href="login.html"
 })
 
 bookingNow.addEventListener('click',()=>{
-    window.location.href="./html/login.html"
+    window.location.href="login.html"
 })
 
 hotelBook.addEventListener('click',()=>{
-    window.location.href="./html/login.html"
+    window.location.href="login.html"
 
 
 
