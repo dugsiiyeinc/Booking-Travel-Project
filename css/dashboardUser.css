@@ -717,14 +717,14 @@ flex-direction: column;
   position: relative;
   top: 0;
   right: 0;
-  left: 250px;
+  left: 180px;
   text-align: center;
 }
 .hotel-table .daleteBtn{
   position: relative;
   top: 0;
   right: 0;
-  left: 320px;
+  left: 190px;
   overflow: hidden;
   padding-inline: 5px;
 }
@@ -732,7 +732,7 @@ flex-direction: column;
   position: relative;
   top: 0;
   right: 0;
-  left: 320px;
+  left: 190px;
   overflow: hidden;
   padding-inline: 9px;
 
@@ -759,7 +759,6 @@ flex-direction: column;
   border-left: 3px solid #fff;
   padding-block: 10px;
   border-radius: 5px;
-  font-size: 21px;
 }
 
 .theads-Hotel thead  tr{

@@ -519,14 +519,14 @@
   position: relative;
   top: 0;
   right: 0;
-  left: 250px;
+  left: 180px;
   text-align: center;
 }
 .hotel-table .daleteBtn{
   position: relative;
   top: 0;
   right: 0;
-  left: 320px;
+  left: 190px;
   overflow: hidden;
   padding-inline: 5px;
 }
@@ -534,15 +534,13 @@
   position: relative;
   top: 0;
   right: 0;
-  left: 320px;
+  left: 190px;
   overflow: hidden;
   padding-inline: 9px;
 
 }
 
-.hotel-table{
-  font-weight: 600;
-}
+
 .Hotels-books-heading{
   background-color: #122541;
   width: 25%;
@@ -556,17 +554,13 @@
 }
 
 
-.my-Hotels{
-  font-size: 18px;
-
-}
 .my-Hotels:hover{
   background-color: #122541;
   padding-inline:31px;
   border-left: 3px solid #fff;
   padding-block: 10px;
   border-radius: 5px;
-  font-size: 21px;
+
 }
 
 .theads-Hotel thead  tr{
