@@ -118,10 +118,10 @@ formUser.addEventListener("submit",(e)=>{
            localStorage.setItem("onine-User",JSON.stringify(allLoginUser))
 
             if (LogInUser.userSelectSystem ==="admin") {
-            window.location.href="DashboardAdmin.html"
+            window.location.href="./html/DashboardAdmin.html"
             }
             else{
-           window.location.href="DashboardUser.html"
+           window.location.href="./html/DashboardUser.html"
            
             }
  
