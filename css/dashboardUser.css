@@ -89,15 +89,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
 }
 
-.flight-booking:hover{
-background-color: #122541;
-padding-inline:30px ;
-padding-block: 5px;
-border-radius: 2px;
-border-left:5px solid #fff  ;
+.flight-booking:hover {
+  background-color: #122541;
+  padding-inline: 30px;
+  padding-block: 5px;
+  border-radius: 2px;
+  border-left: 5px solid #fff;
 }
 
 .Hotel-booking {
@@ -109,13 +108,12 @@ border-left:5px solid #fff  ;
   align-items: center;
   gap: 10px;
 }
-.Hotel-booking:hover{
-
+.Hotel-booking:hover {
   background-color: #122541;
-  padding-inline:30px ;
+  padding-inline: 30px;
   padding-block: 5px;
   border-radius: 2px;
-  border-left:5px solid #fff  ;
+  border-left: 5px solid #fff;
 }
 
 .my-Booking {
@@ -127,12 +125,12 @@ border-left:5px solid #fff  ;
   align-items: center;
   gap: 10px;
 }
-.my-Booking:hover{
+.my-Booking:hover {
   background-color: #122541;
-  padding-inline:30px ;
+  padding-inline: 30px;
   padding-block: 5px;
   border-radius: 2px;
-  border-left:5px solid #fff  ;
+  border-left: 5px solid #fff;
   font-size: 20px;
 }
 
@@ -223,7 +221,7 @@ border-left:5px solid #fff  ;
   font-weight: 600;
 }
 
-.Hotel-form select{
+.Hotel-form select {
   color: #1e5cdf;
   border-radius: 2px;
   padding-inline: 5px;
@@ -306,11 +304,11 @@ label {
 .flight-mobile-book {
   display: none;
 }
-.hotel-form-mobile{
+.hotel-form-mobile {
   display: none;
 }
 
-.data-user{
+.data-user {
   position: absolute;
   top: 15rem;
   right: 18rem;
@@ -318,24 +316,23 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
- gap: 20px;
-
+  gap: 20px;
 }
-.Full-Name{
- text-align: center;
- display: flex;
- align-items: center;
- justify-content: center;
-gap: 10px;
-flex-direction: column;
+.Full-Name {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
 }
-.Full-Name h3{
+.Full-Name h3 {
   font-size: 16px;
   color: #122541;
   font-weight: 700;
   color: #1e5cdf;
 }
-.Email-Address{
+.Email-Address {
   text-align: center;
   display: flex;
   align-items: center;
@@ -345,13 +342,13 @@ flex-direction: column;
   line-height: 20px;
 }
 
-.Email-Address h3{
+.Email-Address h3 {
   font-size: 16px;
   color: #122541;
   font-weight: 700;
   color: #1e5cdf;
 }
-.Phone-Number{
+.Phone-Number {
   text-align: center;
   display: flex;
   align-items: center;
@@ -359,52 +356,20 @@ flex-direction: column;
   flex-direction: column;
   gap: 10px;
 }
-.Phone-Number h3{
+.Phone-Number h3 {
   font-size: 16px;
   color: #122541;
   font-weight: 700;
   color: #1e5cdf;
 }
 
-.From-Departure-City h3{
-  font-size: 16px;
-  color: #122541;
-  font-weight: 700;
-  color: #1e5cdf;
-
-}
-.From-Departure-City{
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-
-}
-.To-Destination-City h3{
+.From-Departure-City h3 {
   font-size: 16px;
   color: #122541;
   font-weight: 700;
   color: #1e5cdf;
 }
-.To-Destination-City{
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-
-}
-.Departure-Date h3{
-  font-size: 16px;
-  color: #1e5cdf;
-  font-weight: 700;
-  gap: 10px;
-  color: #1e5cdf;
-}
-.Departure-Date{
+.From-Departure-City {
   text-align: center;
   display: flex;
   align-items: center;
@@ -412,13 +377,42 @@ flex-direction: column;
   flex-direction: column;
   gap: 10px;
 }
-.Return-Date h3{
+.To-Destination-City h3 {
   font-size: 16px;
   color: #122541;
   font-weight: 700;
   color: #1e5cdf;
 }
-.Return-Date{
+.To-Destination-City {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Departure-Date h3 {
+  font-size: 16px;
+  color: #1e5cdf;
+  font-weight: 700;
+  gap: 10px;
+  color: #1e5cdf;
+}
+.Departure-Date {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Return-Date h3 {
+  font-size: 16px;
+  color: #122541;
+  font-weight: 700;
+  color: #1e5cdf;
+}
+.Return-Date {
   text-align: center;
   display: flex;
   align-items: center;
@@ -427,26 +421,23 @@ flex-direction: column;
   gap: 10px;
 }
 
-.Flight-Class h3{
+.Flight-Class h3 {
   font-size: 16px;
   color: #122541;
   font-weight: 700;
   color: #1e5cdf;
 }
-.Flight-Class{
+.Flight-Class {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-
-
 }
 
-
-.daleteBtn{
-  background-color:red;
+.daleteBtn {
+  background-color: red;
   padding-inline: 10px;
   padding-block: 5px;
   border: 1px solid black;
@@ -456,25 +447,23 @@ flex-direction: column;
   cursor: pointer;
 }
 
-.Edit{
-  background-color:green;
+.Edit {
+  background-color: green;
   padding-inline: 20px;
   padding-block: 5px;
   border: 1px solid black;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
-  
-  
 }
 
-.flight-booking-Table{
+.flight-booking-Table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-.thead thead  tr{
+.thead thead tr {
   display: flex;
   gap: 5rem;
   align-items: center;
@@ -483,80 +472,74 @@ flex-direction: column;
   position: relative;
   top: -25rem;
   left: 0;
-  right:0;
-   bottom: 0;
-   padding: 5px;
-
+  right: 0;
+  bottom: 0;
+  padding: 5px;
 }
-.flight-booking-Table{
+.flight-booking-Table {
   background-color: #1e5cdf;
   margin-top: -1%;
   position: relative;
   top: -24rem;
   left: 0;
-  right:0;
+  right: 0;
   text-align: center;
   overflow: hidden;
 }
-.flight-table{
+.flight-table {
   padding-inline: 10px;
   padding-block: 8px;
   margin: 7px;
-
-
 }
-.flight-table .full-name{
+.flight-table .full-name {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.flight-table .email-address{
- padding-inline: 20px;
-  
+.flight-table .email-address {
+  padding-inline: 20px;
 }
-.flight-table .phone-number{
+.flight-table .phone-number {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-inline: 10px;
   padding-block: 15px;
 }
-.flight-table .from{
+.flight-table .from {
   padding-inline: 10px;
   padding-block: 15px;
-
 }
-.flight-table .destination{
+.flight-table .destination {
   padding-inline: 10px;
   padding-block: 15px;
-
 }
-.flight-table .daleteBtn{
+.flight-table .daleteBtn {
   margin-block: 10px;
   position: relative;
   top: 0;
   right: 0;
   left: 20px;
 }
-.flight-table .departure-Date{
+.flight-table .departure-Date {
   position: relative;
   top: 0;
   right: 0;
   left: 10px;
 }
-.flight-table .flight-classes{
+.flight-table .flight-classes {
   position: relative;
   top: 0;
   right: 0;
   left: 8px;
 }
-.flight-table .returnDate{
+.flight-table .returnDate {
   position: relative;
   top: 0;
   right: 0;
   left: 8px;
 }
-.flight-table .Edit{
+.flight-table .Edit {
   margin-block: 10px;
   position: relative;
   top: 0;
@@ -564,27 +547,26 @@ flex-direction: column;
   left: 18px;
 }
 
-.thead .Name{
-  margin-right:20px;
+.thead .Name {
+  margin-right: 20px;
   width: 30px;
   font-size: 18px;
 }
-.thead .email{
+.thead .email {
   margin-right: 30px;
   width: 45%;
-
 }
 
-.thead .phoness{
+.thead .phoness {
   margin-right: 30px;
   width: 40%;
 }
-.thead .froms{
+.thead .froms {
   margin-right: 30px;
   width: 40%;
 }
 
-.flight-book-heading{
+.flight-book-heading {
   background-color: #122541;
   width: 25%;
   text-align: center;
@@ -592,27 +574,26 @@ flex-direction: column;
   position: relative;
   top: -27rem;
   left: 0;
-  right:0;
+  right: 0;
   border-radius: 6px;
 }
 
-.flight-forms{
+.flight-forms {
   position: relative;
   top: -38rem;
   left: 27rem;
-  right:0;
+  right: 0;
   border-radius: 6px;
   background-color: #122541;
   display: flex;
   flex-direction: column;
   width: 50%;
-  
 }
-.flight-forms input{
+.flight-forms input {
   width: 100%;
 }
-.btn-Update{
-  background-color:green;
+.btn-Update {
+  background-color: green;
   padding-inline: 20px;
   padding-block: 5px;
   border: 1px solid black;
@@ -621,42 +602,42 @@ flex-direction: column;
   cursor: pointer;
   margin-top: 2%;
 }
-.flight-forms .head{
-  position:absolute;
+.flight-forms .head {
+  position: absolute;
   top: 0;
   right: 10px;
   color: #ffffff;
   cursor: pointer;
 }
-.my-Hotels{
+.my-Hotels {
   cursor: pointer;
 }
 
-.hotel-booking-Table{
+.hotel-booking-Table {
   background-color: #1e5cdf;
   margin-top: -1%;
   position: relative;
   top: -24rem;
   left: 2px;
-  right:0;
+  right: 0;
   text-align: center;
   overflow: hidden;
   padding-inline: 20px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-
-.hotel-table .Names{
+.hotel-table .Names {
   padding-inline: 10px;
   padding-block: 8px;
   position: relative;
   top: 0;
   right: 0;
   left: -28px;
-
-
 }
-.hotel-table .addresss{
+.hotel-table .addresss {
   padding-inline: 10px;
   padding-block: 8px;
   margin: 3px;
@@ -665,7 +646,7 @@ flex-direction: column;
   right: 0;
   left: -30px;
 }
-.hotel-table .phone{
+.hotel-table .phone {
   padding-inline: 10px;
   padding-block: 8px;
   margin-inline: 20px;
@@ -674,7 +655,7 @@ flex-direction: column;
   right: 0;
   left: -30px;
 }
-.hotel-table .fromss{
+.hotel-table .fromss {
   padding-inline: 10px;
   padding-block: 8px;
   margin: 10px;
@@ -683,7 +664,7 @@ flex-direction: column;
   right: 0;
   left: -10px;
 }
-.hotel-table .destination{
+.hotel-table .destination {
   padding-inline: 10px;
   padding-block: 8px;
   margin: 5px;
@@ -692,52 +673,52 @@ flex-direction: column;
   right: 0;
   left: 20px;
 }
-.hotel-table .departure-Datess{
+.hotel-table .departure-Datess {
   position: relative;
   top: 0;
   right: 0;
   left: 80px;
 }
-.hotel-table .returnDates{
+.hotel-table .returnDates {
   position: relative;
   top: 0;
   right: 0;
   left: 128px;
   text-align: center;
 }
-.hotel-table .flight-classess{
-
+.hotel-table .flight-classess {
   position: relative;
   top: 0;
   right: 0;
   left: 170px;
   text-align: center;
 }
-.hotel-table .number-of-Guest{
+.hotel-table .number-of-Guest {
   position: relative;
   top: 0;
   right: 0;
   left: 180px;
   text-align: center;
 }
-.hotel-table .daleteBtn{
+.hotel-table .daleteBtn {
   position: relative;
   top: 0;
   right: 0;
-  left: 190px;
+  left: 130px;
   overflow: hidden;
   padding-inline: 5px;
+  margin-left: 8px;
 }
-.hotel-table .Edit{
+.hotel-table .Edit {
   position: relative;
   top: 0;
   right: 0;
-  left: 190px;
+  left: 130px;
   overflow: hidden;
   padding-inline: 9px;
-
+  margin-left: 3px;
 }
-.Hotels-books-heading{
+.Hotels-books-heading {
   background-color: #122541;
   width: 25%;
   text-align: center;
@@ -745,23 +726,22 @@ flex-direction: column;
   position: relative;
   top: -28rem;
   left: 0;
-  right:0;
+  right: 0;
   border-radius: 6px;
 }
 
-
-.my-Hotels{
+.my-Hotels {
   font-size: 18px;
 }
-.my-Hotels:hover{
+.my-Hotels:hover {
   background-color: #122541;
-  padding-inline:31px;
+  padding-inline: 31px;
   border-left: 3px solid #fff;
   padding-block: 10px;
   border-radius: 5px;
 }
 
-.theads-Hotel thead  tr{
+.theads-Hotel thead tr {
   display: flex;
   gap: 5rem;
   align-items: center;
@@ -770,10 +750,9 @@ flex-direction: column;
   position: relative;
   top: -25rem;
   left: 0;
-  right:0;
-   bottom: 0;
-   padding: 5px;
-
+  right: 0;
+  bottom: 0;
+  padding: 5px;
 }
 
 /* tablet  and mobile Responsive Desing */
@@ -843,7 +822,7 @@ flex-direction: column;
     padding-inline: 3rem;
     padding-block: 1rem;
   }
-  .hotel-form-mobile{
+  .hotel-form-mobile {
     display: none;
   }
 }
@@ -920,15 +899,15 @@ flex-direction: column;
     font-weight: 600;
   }
 
-  .Hotel-booking-mobile{
+  .Hotel-booking-mobile {
     font-size: 14px;
   }
 
-  .hotel-form-mobile{
+  .hotel-form-mobile {
     display: flex;
   }
 
-  .hotel-form-mobile{
+  .hotel-form-mobile {
     display: flex;
     position: absolute;
     top: 420px;
