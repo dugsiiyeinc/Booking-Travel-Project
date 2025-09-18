@@ -1,212 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Admin</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/dashboardadmin.css" />
+    <link rel="stylesheet" href="../css/syleDashboard.css" />
+  </head>
+  <body>
+    <button class="toggle-btn" id="toggleSidebar">
+      <i class="fas fa-bars"></i>
+    </button>
 
-    <link rel="stylesheet" href="../css/dashboardadmin.css">
-</head>
-<body>
-    <!--nav Dashboard -->
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h3>Travel <span>Booking</span></h3>
+          <p>Admin Dashboard</p>
+        </div>
 
-    <nav class="nav-dash ">
-   <h1>Travel Booking</h1>
-   <!-- bar -->
-   <div class="bars">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="dash-menu">
-   <div class="dash-user">
-    <span> Dashboard</span>
-    <p class="system">Admin</p>
-   </div>
-    <span class="User"> <i class="fa-solid fa-user"></i> Abdirahman Dalmar</span>
-    <button type="button" class="LogOut">LogOut</button>
-</div>
+        <div class="sidebar-menu">
+          <div class="menu-item active">
+            <i class="fas fa-tachometer-alt"></i>
+            <span class="dash">Dashboard</span>
+          </div>
+          <div class="menu-item">
+            <i class="fas fa-suitcase"></i>
+            <span class="Flight-Packages">Flight Packages</span>
+          </div>
 
-</nav>
-<main class="main">
+          <div class="menu-item">
+            <i class="fas fa-suitcase"></i>
+            <span class="hotel-Packages">Hotel Packages</span>
+          </div>
+          <div class="menu-item">
+            <i class="fas fa-search"></i>
+            <span class="SearchFlights">Flight Search</span>
+          </div>
+          <div class="menu-item">
+            <i class="fas fa-search"></i>
+            <span class="Hotel-Search">Hotel Search</span>
+          </div>
 
-
-
-<!-- sidebar Dashboard -->
-
-<aside class="aside-dashboard">
-    <div class="image-dash">
-    <h1>Dashboard</h1>
-    <img src="../imges/remove-dash.png" alt="imge-dash">
-    </div>
-
-    <div class="flight-booking">  
-        <i class="fa-solid fa-book"></i>
-        <span class="All-Booking">Flight Booking</span>
-    </div>
-
-    <div class="Hotel-booking">
-        <i class="fa-solid fa-book"></i>
-        <span class="All-Booking">Hotel Booking</span>
-    </div>
-
-    <div class="all-Users-booking">
-        <span class="all-users"><i class="fa-solid fa-hotel"></i>All Users</span>    
-    </div>
-
-    <div class="Contact-Booking">
-        <span class="Contact-Info"><i class="fa-solid fa-address-book"></i>  Contact Info</span>
-    </div>
-   </aside>
-
-
-<section class="hero">
-    <div class="content-hero">
-     <span class="name-user"> Manager Abdirahman Dalmar</span>
-    </div>
-
-    <!-- totals booking -->
-</section>
-<section class="total-flight">
-    <div class="flight-count">
-        <p>   <i class="fa-solid fa-book"></i>Total Flight Booking</p>
-        <span class="flight-total-count">300</span>
-    </div>
-</section>
-
-<section class="total-Hotels">
-    <div class="hotel-count">
-        <p>  <i class="fa-solid fa-hotel"></i> Total Hotel Booking</p>
-        <span class="Hotel-total-count">20</span>
-    </div>
-</section>
-
-<section class="total-contact">
-    <div class="contact-count">
-        <p>  <i class="fa-solid fa-address-book"></i> Total Contact Info</p>
-        <span class="contact-total-count">100</span>
-    </div>
-</section>
-</main>
-
-
- <!-- table heading flights -->
- <div class="flight-book-heading" style="display: none">
-    <h1>✈️ Flight Booking</h1>
-  </div>
-
-  <table class="thead" style="display: none">
-    <thead>
-      <tr>
-        <th class="Name">Name</th>
-        <th class="email">Email Address</th>
-        <th class="phoness">Phone Number</th>
-        <th class="froms">From</th>
-        <th class="to dis">To</th>
-        <th class="depar">Departure Date</th>
-        <th class="return">Return Date</th>
-        <th class="class">flight Class</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-  </table>
-
-  <table class="flight-booking-Table">
-    <!-- dynamic table tbody flights -->
-  </table>
-
-
-
-
-
-    <!-- hotel heading  -->
-    <div class="Hotels-books-heading" style="display: none">
-        <h1>📋 Hotel Booking</h1>
+          <div class="menu-item">
+            <i class="fas fa-credit-card"></i>
+            <span class="Payment-Book">Payment</span>
+          </div>
+          <div class="menu-item">
+            <i class="fas fa-info-circle"></i>
+            <span class="Contact-Info">Contact Info</span>
+          </div>
+          <div class="menu-item">
+            <i class="fas fa-users"></i>
+            <span class="Customers">Customers</span>
+          </div>
+        
+          <div class="menu-item">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="Logout">Logout</span>
+          </div>
+        </div>
       </div>
-  
-      <table class="theads-Hotel" style="display: none">
-        <thead>
-          <tr>
-            <th class="Name">Name</th>
-            <th class="email">Email Address</th>
-            <th class="phoness">Phone Number</th>
-            <th class="froms">Hotel Name</th>
-            <th class="to dis">Destination City</th>
-            <th class="depar">Check-in Date</th>
-            <th class="depar">Check-out Date</th>
-            <th class="return">Room Type</th>
-            <th class="class">Number of Guests</th>
-            <th>`</th>
-          </tr>
-        </thead>
-      </table>
-  
-      <table class="hotel-booking-Table" style="display: none;">
-        <!-- dynamic table tbody hotels -->
-      </table>
-  
 
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+          <div class="search-bar">
+    
+    
+          </div>
 
-<!-- all users -->
+          <div class="User">
+            <img class="user-avatar" src="" alt="Admin User" />
+            <span class="dashboard-User">Guest</span>
+          </div>
+        </div>
 
+        <!-- Content Area -->
+        <div class="content">
+          <div class="page-title">
+            <h1>Dashboard Overview</h1>
+            <p>Today: <span id="currentDate"></span></p>
+          </div>
 
-    <div class="all-Users-books-heading" style="display: none">
-        <h1>📋 All Users </h1>
+          <!-- Stats Cards -->
+          <div class="card-grid" style="display: block; display: grid">
+        <div class="card">
+    <div class="card-header">
+      <div>
+        <p class="card-title">Total Bookings</p>
+        <p class="stat" id="totalBookings">0</p>
       </div>
-  
-      <table class="theads-All-Users" style="display: none">
-        <thead>
-          <tr>
-            <th class="Name">Name</th>
-            <th class="email">Email Address</th>
-            <th class="	Role">Role</th>
-            <th class="froms">Actions</th>
-          </tr>
-        </thead>
-      </table>
-  
-      <table class="all-Users-booking-Table" style="display: none;">
-        <!-- dynamic table tbody all Users -->
-      </table>
+      <i class="fas fa-calendar-check"></i>
+    </div>
+  </div>
 
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <p class="card-title">Revenue</p>
+        <p class="stat" id="totalRevenue">$0</p>
+      </div>
+      <i class="fas fa-dollar-sign"></i>
+    </div>
+  </div>
 
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <p class="card-title">Packages</p>
+        <p class="stat" id="totalPackages">0</p>
+      </div>
+      <i class="fas fa-suitcase"></i>
+    </div>
+  </div>
 
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <p class="card-title">Total Customers</p>
+        <p class="stat" id="totalCustomers">0</p>
+      </div>
+      <i class="fas fa-users"></i>
+    </div>
+  </div>
 
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <p class="card-title">Contact Info</p>
+        <p class="stat" id="totalContacts">0</p>
+      </div>
+      <i class="fas fa-info-circle"></i>
+    </div>
+  </div>
+            
+          </div>
 
+          <!-- Revenue Chart -->
+          <div class="chart-container" style="display: block">
+            <div class="chart-header">
+              <h2>Revenue Analysis</h2>
+              <div class="chart-filter">
+                <button class="filter-btn active">Monthly</button>
+                <button class="filter-btn">Quarterly</button>
+                <button class="filter-btn">Yearly</button>
+              </div>
+            </div>
+            <canvas id="revenueChart"></canvas>
+          </div>
 
+          <div class="dashboard-container" style="display: none">
+            <h2>✈ Packages Flight + Hotel</h2>
+            <table id="dashboardTable">
+              <thead>
+                <tr>
+                  <th>Hotel</th>
+                  <th>Price</th>
+                  <th>Location</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="dashboardBody"></tbody>
+            </table>
 
+            <table id="flightTable">
+              <thead>
+                <tr>
+                  <th>Origin</th>
+                  <th>Destination</th>
+                  <th>Depart</th>
+                  <th>Return</th>
+                  <th>Passengers</th>
+                  <th>Trip Type</th>
+                  <th>Class</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="flightBody"></tbody>
+            </table>
+          </div>
 
+          <!-- hotel And flight Packages  -->
+          <div class="dashboard-containers" style="display: none">
+            <h2>🏨 Packages Hotel + Flight</h2>
+            <div class="table-wrapper">
+              <table id="dashboardTablePckages">
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Price</th>
+                    <th>Departure</th>
+                    <th>Travelers</th>
+                    <th>Destination</th>
+                    <th>Booking Date</th>
+                    <th>Requests</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="dashboardBodyPackages">
+                  <!-- Data will load dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
 
+          <!--End hotel And flight Packages  -->
 
+          <!-- packages Hotel and flight 2 -->
+          <div class="dashboard-containerPack" style="display: none">
+            <div class="dashboard-containers">
+              <table id="packagesTable">
+                <thead>
+                  <tr>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Check-in</th>
+                    <th>Check-out</th>
+                    <th>Travelers</th>
+                    <th>Cabin Class</th>
+                    <th>Trip Type</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="packagesTbody">
+                  <!-- Data will load dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-      <!-- all contact -->
+          <!-- end Packages and flight 2 -->
+          <!-- flight Search -->
+          <div class="dashboard-containerSearch" style="display: none">
+            <h2>✈️ Flight Bookings Search</h2>
+            <div class="table-wrapper">
+              <table id="flightDashboardTable">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Airline</th>
+                    <th>Route</th>
+                    <th>Price</th>
+                    <th>Departure Time</th>
+                    <th>Booking Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="flightDashboardBody">
+                  <!-- Data will load dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
 
+          <!-- End Flight Search -->
 
-    <div class="all-contact-books-heading" style="display: none">
-      <h1>📋 All Contact Us </h1>
+          <!-- Flight Search Data -->
+          <div class="dashboard-containerDataSearch" style="display: none">
+            <div class="table-wrapper">
+              <table id="flightSearchDashboardTable">
+                <thead>
+                  <tr>
+                    <th>Trip Type</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                    <th>Depart Date</th>
+                    <th>Return Date</th>
+                    <th>Passengers</th>
+                    <th>Cabin Class</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="flightSearchDashboardBody">
+                  <!-- Data will load dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Flight Search Data End-->
+
+          <!--Hotel Search   -->
+          <div class="dashboard-container-Hotel" style="display: none">
+            <h2>🏨 Hotel Bookings Search</h2>
+            <div class="table-wrapper">
+              <table id="hotelDashboardTable">
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Hotel Name</th>
+                    <th>Booked At</th>
+                    <th>Price</th>
+                    <th>Location</th>
+                    <th>CheckIn</th>
+                    <th>Checkout</th>
+                    <th>Adults</th>
+                    <th>Children</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="hotelDashboardBody">
+                  <!-- Data will load dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- End Search Hotel -->
+
+          <!-- hotel search Data -->
+          <div class="dashboard-container-Hotel-Search" style="display: none">
+            <div class="table-wrapper">
+              <table id="hotelSearchTable">
+                <thead>
+                  <tr>
+                    <th>Destination</th>
+                    <th>Check-in</th>
+                    <th>Check-out</th>
+                    <th>Room Travelers</th>
+                    <th>Date Saved</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="hotelSearchBody">
+                  <!-- Data will load dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Hotel Search Data -->
+
+          <!-- peymet User -->
+          <div class="dashboard-container-Peyment" style="display: none">
+            <div class="dashboard-container">
+              <h2>Peyment Booking</h2>
+              <table id="bookingsTable">
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Destination</th>
+                    <th>Departure</th>
+                    <th>Return</th>
+                    <th>Travelers</th>
+                    <th>Payment</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="bookingsBody">
+                  <!-- Dynamic rows -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Peyment User End -->
+               <!-- Contact Info  -->
+
+    <div class="contact-dashboard" style="display: none">
+      <div class="dashboard-container">
+        <h2>📨 Contact Us</h2>
+        <div class="table-wrapper">
+          <table id="contactTable">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Message</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="contactTableBody">
+              <!-- Data will load dynamically -->
+            </tbody>
+          </table>
+
+           </div>
+      </div>
+    </div>
+    <!-- Contact Info End -->
+     <!-- All Customers -->
+          <div class="dashboard-Customers" style="display: none">
+            <div class="icon">
+             <i class="fas fa-users" ></i>
+            <h2> All Customers</h2>
+            </div>
+            <div class="table-wrappers">
+              <table id="all-Customers">
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="dashboard-Customer-Tbody">
+                  <!-- Data will load dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+<!-- 
+          <End All Customers -->
+
+        </div>
+      </div>
     </div>
 
-    <table class="theads-All-Contact" style="display: none">
-      <thead>
-        <tr>
-          <th class="Name">First Name</th>
-          <th class="email">Last Name</th>
-          <th class="	Role">Email Address</th>
-          <th class="froms">Phone Number</th>
-        </tr>
-      </thead>
-    </table>
 
-    <table class="all-Contact-booking-Table" style="display: none;">
-      <!-- dynamic table tbody all Users -->
-    </table>
-</body>
-<script src="../js/dashbordUser.js"></script>
-<script src="../js/dashboardAdmin.js"></script>
-<script src="../js/contact.js"></script>
+
+    
+  </body>
+       
+  <script src="../js/dashboardAdmin.js"></script>
+  <script src="../js/HotelandFlightPackages.js"></script>
+  <script src="../js/PackagesHotel.js"></script>
+  <script src="../js/login.js"></script>
 </html>
