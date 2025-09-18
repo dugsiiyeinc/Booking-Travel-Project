@@ -491,36 +491,81 @@ body{
   /* response mobile  */
   
   @media (max-width: 690px) {
-    .nav {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
+   .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   
-    .bars {
-      display: flex;
-    }
   
-    .nav-links {
-      width: 100%;
-      max-height: 0;
-      opacity: 0;
-      overflow: hidden;
-    }
-    .nav-links ul {
-      flex-direction: column;
-      margin-top: 5%;
-      gap: 48px;
-    }
-    .nav-links li {
-      text-align: center;
-    }
+}
+  .bars {
+    display: flex;
+  }
+
+ /* Mobile nav container */
+.nav-links {
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  background: #0a2342; /* navy sida sawirka */
+height: 120vh;
+
+}
+
+/* Markii menu active yahay */
+.nav-links.active {
+  max-height: 100vh;   /* qaado height dhan */
+  opacity: 1;
+  padding: 50rem 10rem;
+  overflow: visible;      /* hubi inuusan dhuuman */
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;              /* spacing ka dhig yar */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+.nav-links li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #00bcd4; /* accent color */
+}
+
+/* Login Button Style */
+.nav-links .log-in {
+display: block;
+   width: 100%;     /* ballac dhan mobile */
+  margin-top: -20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
   
-    .log-in {
-      padding-block: 12px;
-      padding-inline: 35px;
-    }
-  
+}
+
+.nav-links .log-in:hover {
+  background: #ffffff;
+}
     .hero-contant h2 {
       font-size: 1.5rem;
     }

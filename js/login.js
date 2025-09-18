@@ -20,43 +20,45 @@ const SelectedSystem=document.querySelector("#Selected-System")
 
 
 window.addEventListener("DOMContentLoaded", () => {
-    const userDash=JSON.parse(localStorage.getItem("onine-User"))||[]
-    
-      console.log('username',userDash)
+     const allDataUser = JSON.parse(localStorage.getItem("userData")) || [];
+  const userDashboard = document.querySelector(".dashboard-User");
+  const userAvatar = document.querySelector(".user-avatar");
 
-    const userDashboard=document.querySelector('.dashboard-User')
+  if (allDataUser.length > 0) {
+    const username = allDataUser[0].username || "Admin";
+    userDashboard.textContent = username;
 
-    console.log("is waa",userDashboard)
-  if (userDash.length > 0) {   // arrayga datada ayaan hubin ku samaynay ....
-    userDashboard.textContent=userDash[0].username  // hadii ay data array ah jirto nasii......
+    // Avatar ka samee initials
+    userAvatar.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+      username
+    )}&background=3498db&color=fff`;
+  } else {
+    userDashboard.textContent = "Guest";
+    userAvatar.src =
+      "https://ui-avatars.com/api/?name=Guest&background=95a5a6&color=fff";
   }
-  else{
-    userDashboard.textContent="guest"  // hadaysan jirina guest Noso bandhig.....
-  }
-   
-
-
 });
 
 
 
 
-window.addEventListener('DOMContentLoaded',()=>{
-    const userSystem=JSON.parse(localStorage.getItem("onine-User"))||[]
 
-    const nameUser=document.querySelector('.name-user')
+// window.addEventListener('DOMContentLoaded',()=>{
+//     const userSystem=JSON.parse(localStorage.getItem("onine-User"))||[]
+
+//     const nameUser=document.querySelector('.name-user')
 
     
-    console.log(" waa",userSystem)
+//     console.log(" waa",userSystem)
 
-  if (userSystem.length > 0) {   // arrayga datada ayaan hubin ku samaynay .... oo waxaan hubinaynay in ay data ku jidho localka...
-    nameUser.textContent=userSystem[0].username  // hadii ay data array ah jirto nasii......
-  }
-  else{
-    nameUser.textContent="guest"  // hadaysan jirina guest Noso bandhig.....
-  }
+//   if (userSystem.length > 0) {   // arrayga datada ayaan hubin ku samaynay .... oo waxaan hubinaynay in ay data ku jidho localka...
+//     nameUser.textContent=userSystem[0].username  // hadii ay data array ah jirto nasii......
+//   }
+//   else{
+//     nameUser.textContent="guest"  // hadaysan jirina guest Noso bandhig.....
+//   }
 
-})
+// })
 
 
 
@@ -102,38 +104,41 @@ formUser.addEventListener("submit",(e)=>{
         userEmail:email.value,
         userPassword:password.value,
         userConfirmPassword:login?undefined:confirmPassword.value,
-        userSelectSystem:SelectedSystem.value
+    
     }
   
 
 
-    if (login) { 
-        // waxaa local storageka ka raadinaynaa in uu userku isa soo diwaan galiyey... mrkaas waxaa radinaynaa user email iyo userka passwordkiisa iyo selecter admin iyo user....
-        const allDataUser=JSON.parse(localStorage.getItem("userData"))||[]
-        const LogInUser=allDataUser.find((user)=> user.userEmail === email.value  && user.userPassword === password.value  && user.userSelectSystem ===SelectedSystem.value)
-    
-        if (LogInUser) {   // markii lasoo helo userka emailkiisa iyo passwrodkiisa selec adminiyo user wuxu yahayba ... waxaalagaynayaa local storge oo ah in uu online yahay userkaas.... oo uu soo gelay ststemka...
-            const allLoginUser=JSON.parse(localStorage.getItem("onine-User"))||[]
-            allLoginUser.push(LogInUser)
-           localStorage.setItem("onine-User",JSON.stringify(allLoginUser))
+  if (login) { 
+    // Hel dhammaan users ee localStorage
+    const allDataUser = JSON.parse(localStorage.getItem("userData")) || [];
 
-            if (LogInUser.userSelectSystem ==="admin") {
-            window.location.href="DashboardAdmin.html"
-            }
-            else{
-           window.location.href="DashboardUser.html"
-           
-            }
- 
+    // Raadi user-ka email iyo password
+    const LogInUser = allDataUser.find(
+        (user) => user.userEmail === email.value && user.userPassword === password.value
+    );
+
+    if (LogInUser) {   
+        // Hubi in user-ka yahay admin
+        if (LogInUser.userSelectSystem === "admin") {
+            // Save user online
+            const allLoginUser = JSON.parse(localStorage.getItem("online-User")) || [];
+            allLoginUser.push(LogInUser);
+            localStorage.setItem("online-User", JSON.stringify(allLoginUser));
+
+            // Redirect to admin dashboard
+        } else {
+            // Haddii user caadi ah isku dayo login admin
+        window.location.href = "../html/DashboardAdmin.html";
+            return;
         }
-        else{
-            alert("invalid Credentials")
-            return
-        }
-
-
-    
+    } else {
+        // Haddii credentials khaldan
+        alert("Invalid Credentials");
+        return;
     }
+}
+
 
     else{
     
@@ -141,7 +146,7 @@ formUser.addEventListener("submit",(e)=>{
  console.log("alldara",allDataUser)
    
  const stopUser=allDataUser.find((user)=> user.username === username.value  && user.userEmail === email.value) 
-  if (stopUser) {
+  if (stopUser) { 
     alert(`user ${stopUser.username} already exists`)
     return
   }
@@ -155,7 +160,7 @@ formUser.addEventListener("submit",(e)=>{
         alert("Waa Khaldan yahay Passwordkaaga")
         return
      }
-   
+   l
     }
 
 

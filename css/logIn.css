@@ -93,3 +93,20 @@ body {
     outline: none;
   }
 
+@media (max-width: 690px) {
+.layout-desing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.layout-desing input{
+  width: 100%;
+}
+.layout-desing .Btn-Login{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-inline: auto;
+}
+}

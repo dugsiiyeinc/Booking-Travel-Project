@@ -1,0 +1,371 @@
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #052c65;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    .back-home {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background:  #f7f7ff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .back-home a {
+      text-decoration: none;
+      color: #183869;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 14px;
+      border: 2px solid #183869;
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .back-home a:hover {
+      background: #183869;
+      color: white;
+    }
+        header {
+            background: linear-gradient(135deg, #1a73e8 0%, #6c5ce7 100%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+       .booking-form{
+        width: 100%;
+       }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .te-container {
+            background: rgb(252, 253, 255);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            margin-bottom: 30px;
+      
+        }
+
+        .packages-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .package-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .package-image {
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .package-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .package-card:hover .package-image img {
+            transform: scale(1.05);
+        }
+
+        .package-content {
+            padding: 20px;
+        }
+
+        .package-destination {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 10px;
+        }
+
+        .package-details {
+            color: #636e72;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .package-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #083167;
+            margin-bottom: 15px;
+        }
+
+        .package-price span {
+            font-size: 1rem;
+            color: #636e72;
+            font-weight: 400;
+        }
+
+        .select-package {
+            background: #0b115a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        .select-package:hover {
+            background: #1557b0;
+        }
+
+        .booking-form-container {
+            background: white;
+            border-radius: 10px;
+            padding: 14px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            
+        }
+
+        .form-title {
+            font-size: 1.8rem;
+            color: #2d3436;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f1f2f6;
+        }
+
+        .selected-package {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .selected-package h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+
+        .package-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .package-info-image {
+            width: 100px;
+            height: 80px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+
+        .package-info-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .package-info-details {
+            flex: 1;
+        }
+
+        .package-info-destination {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: #2d3436;
+        }
+
+        .package-info-price {
+            font-weight: 700;
+            color: #1a73e8;
+            font-size: 1.3rem;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        .form-group {
+            flex: 1 0 300px;
+            margin: 0 10px 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2d3436;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+        }
+
+        .form-divider {
+            width: 100%;
+            height: 1px;
+            background: #f1f2f6;
+            margin: 10px 0 25px;
+        }
+
+        button[type="submit"] {
+            background: #11157f;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background: #00a885;
+        }
+
+        .data-panel {
+            margin-top: 40px;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .booking-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .booking-details {
+            flex: 1;
+        }
+
+        .booking-destination {
+            font-weight: 600;
+            color: #2d3436;
+            font-size: 1.1rem;
+        }
+
+        .booking-client {
+            color: #636e72;
+        }
+
+        .booking-date {
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+
+        .booking-price {
+            font-weight: 700;
+            color: #1a73e8;
+            font-size: 1.2rem;
+        }
+
+        .empty-bookings {
+            text-align: center;
+            color: #636e72;
+            padding: 20px;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 1000;
+        }
+
+        .notification.success {
+            background: #00b894;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .notification.error {
+            background: #d63031;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .packages-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group {
+                flex: 1 0 100%;
+            }
+            
+            .package-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .package-info-image {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+        

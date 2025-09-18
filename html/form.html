@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Packages</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/Form.css">
+</head>
+<body>
+    <!-- Packgs Hotel and Filght Cards Container -->
+
+<div class="container">
+            <div class="back-home">
+    <a href="javascript:history.back()">← Back Home 🏠</a>
+  </div>
+
+    <div class="container">
+        <div class="te-container">
+            <div class="packages-container" id="packagesContainer">
+                <!-- Packages will be dynamically inserted here -->
+            </div>
+            
+            <div class="booking-form-container" id="booking-Form">
+                <h2 class="form-title">Package Booking</h2>
+                
+                <div class="selected-package">
+                    <h3>Selected Package</h3>
+                    <div class="package-info" id="selectedPackageInfo">
+                        <div class="empty-bookings">No package selected yet. Please choose a package from above.</div>
+                    </div>
+                </div>
+
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Please enter your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Please enter your last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-divider"></div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Please enter a valid email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Please enter your phone number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-divider"></div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="departureDate">Departure Date</label>
+                            <input type="date" id="departureDate" required>
+                            <small style="color: #7f8c8d; margin-top: 5px;"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers</label>
+                            <select id="travelers" required>
+                                <option value="1">1 Traveler</option>
+                                <option value="2" selected>2 Travelers</option>
+                                <option value="3">3 Travelers</option>
+                                <option value="4">4 Travelers</option>
+                                <option value="5">5 Travelers</option>
+                                <option value="6">6+ Travelers</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-divider"></div>
+                    
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" placeholder="Any special requests?"></textarea>
+                    </div>
+                    
+                    <button type="submit">Complete Booking</button>
+                </form>
+            </div>
+            
+         
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+
+  <!--end  Hotel and Filght    Packages Cards Container -->
+</body>
+<script src="../js/Form.js"></script>
+</html>
