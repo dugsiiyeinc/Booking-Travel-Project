@@ -910,13 +910,16 @@ window.addEventListener("DOMContentLoaded", () => {
   const packages = JSON.parse(localStorage.getItem("packages")) || [];
   const contacts = JSON.parse(localStorage.getItem("ContactUs")) || [];
   const customers = JSON.parse(localStorage.getItem("HotelFormData")) || [];
-  const revenue = JSON.parse(localStorage.getItem("flightBookings")) || [];
 
+  // Isku dar kaliya totalPrice
+  let totalRevenue = bookings.reduce((sum, booking) => {
+    return sum + (parseFloat(booking.totalPrice) || 0);
+  }, 0);
 
-
+  // Ku soo bandhig HTML
+  document.getElementById("totalRevenue").textContent = "$" + totalRevenue.toFixed(2);
   // Update Stats UI
   document.getElementById("totalBookings").textContent = bookings.length;
-  document.getElementById("totalRevenue").textContent = "$" + revenue.length
   document.getElementById("totalPackages").textContent = packages.length;
   document.getElementById("totalCustomers").textContent = customers.length;
   document.getElementById("totalContacts").textContent = contacts.length;
